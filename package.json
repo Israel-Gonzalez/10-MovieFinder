@@ -1,0 +1,23 @@
+{
+  "name": "10-moviefinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Israel-Gonzalez/10-MovieFinder.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Israel-Gonzalez/10-MovieFinder/issues"
+  },
+  "homepage": "https://github.com/Israel-Gonzalez/10-MovieFinder#readme",
+  "dependencies": {
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7"
+  }
+}

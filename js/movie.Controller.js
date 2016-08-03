@@ -10,13 +10,28 @@
     /* @ngInject */
     function movieController(movieService) {
         var vm = this;
-        
 
-       
+        vm.searchMovie = '';
+
 
         ////////////////
 
-        function activate() {
+        vm.getMovies = function() {
+            movieService.getMovies(vm.searchMovie).then(
+                function(response) {
+                    vm.movies = response.data;
+                    console.log(response);
+                },
+                function(error) {
+                    console.log(error);
+                }
+            );
         }
-    }
+
+
+
+
+
+
+    };
 })();

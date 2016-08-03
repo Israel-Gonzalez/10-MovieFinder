@@ -1,0 +1,27 @@
+<div class="container row-fluid">
+    <div class="input-group">
+        <input class="form-control" type="text" placeholder="Enter Movie" ng-model="vm.searchMovie">
+        <span class="input-group-btn">
+            <button class="btn btn-primary" type="button submit" ng-click="vm.getMovies()">Go!</button>
+        </span>
+    </div>
+    <br>
+    
+    <div class="col-md-4">
+    <div class="panel panel-default">
+
+    <div class="panel-heading">{{vm.movies.Title}}</div>
+    <div class="panel-body"></div>
+    </div>  
+    </div>
+    
+
+
+
+    <table>
+        <tbody>
+            <tr ng-repeat="movie in vm.movieResults">
+                <td>{{vm.movies.Title}}</td>
+            </tr>
+        </tbody>
+    </table>
