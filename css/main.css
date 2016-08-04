@@ -1,6 +1,23 @@
 #h1 {
-	text-align: center;
-	margin-bottom: 50px;
-	font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 
+#movieTitle,
+#imdb,
+#year {
+    text-align: center;
+}
+
+img {
+    margin-bottom: 15px;
+}
+
+#movieTitle {
+    font-weight: bold;
+}
+
+#container1 {
+    margin-bottom: 15px;
+}

@@ -19,8 +19,8 @@
 
 <body>
     <!-- Where content will be injected -->
+    <header ng-include="'templates/nav.html'"></header>
     <div class="container">
-        <header ng-include="'templates/nav.html'"></header>
         <h1 id="h1">Movie Finder</h1>
         <div ui-view></div>
     </div>
@@ -39,6 +39,3 @@
 </body>
 
 </html>
-
-
-
