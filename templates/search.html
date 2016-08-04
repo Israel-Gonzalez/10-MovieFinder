@@ -1,19 +1,20 @@
-<div class="container row-fluid">
-    <div class="input-group s" id="container1">
+
+    <div class="input-group col-sm-12 col-md-12 col-lg-12" id="container1">
         <input class="form-control" type="text" placeholder="Enter Movie" ng-model="vm.searchMovie">
         <span class="input-group-btn">
             <button class="btn btn-primary" type="button submit" ng-click="vm.getMovies()">Go!</button>
         </span>
     </div>
     <br>
-    <div class="col-md-4" id="container2">
+    <div  class="col-sm-12 col-md-12 col-lg-12" id="container2" align="center">
         <div class="panel panel-default">
             <div class="panel-heading" id="movieTitle">{{vm.movies.Title}}</div>
             <div class="panel-body">
-                <div><img height="270" width="250" src="{{vm.movies.Poster}}"></div>
+                <div><img id="poster" height="270" width="250" src="{{vm.movies.Poster}}"></div>
                 <div id="year">Filmed in {{vm.movies.Year}}</div>
                 <div id="imdb"><a ng-href="http://www.imdb.com/title/{{vm.movies.imdbID}}">Click here to view on IMDB</a></div>
             </div>
         </div>
     </div>
+
   

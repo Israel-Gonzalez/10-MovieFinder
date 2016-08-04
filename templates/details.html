@@ -1,9 +1,43 @@
-<div class="">
-	<div class="panel panel-default">
-		<div class="panel panel-default">
-			<div class="panel-heading" id="movieTitle">{{vm.movies.Title}}</div>
-			<div>{{vm.movies}}</div>
-		</div>
-		
-	</div>
+<div class="input-group col-sm-12 col-md-12 col-lg-12" id="container1">
+    <input class="form-control" type="text" placeholder="Enter Movie" ng-model="vm.searchMovie">
+    <span class="input-group-btn">
+            <button class="btn btn-primary" type="button submit" ng-click="vm.getMovies()">Go!</button>
+        </span>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-12">
+<div class="panel panel-default">
+    <div class="panel-heading" id="movieTitle">{{vm.movies.Title}} Detail's</div>
+    <div class="panel-body">
+        <h5 id="h5" class="row-fluid">Actors:</h5>
+        <div class="">{{vm.movies.Actors}}</div>
+        <h5 id="h5">Awards:</h5>
+        <div>{{vm.movies.Awards}}</div>
+        <h5 id="h5">Country:</h5>
+        <div>{{vm.movies.Country}}</div>
+        <h5 id="h5">Director:</h5>
+        <div>{{vm.movies.Director}}</div>
+        <h5 id="h5">Genre:</h5>
+        <div>{{vm.movies.Genre}}</div>
+        <h5 id="h5">Language:</h5>
+        <div>{{vm.movies.Language}}</div>
+        <h5 id="h5">Metascore:</h5>
+        <div>{{vm.movies.Metascore}}</div>
+        <h5 id="h5">Plot:</h5>
+        <div>{{vm.movies.Plot}}</div>
+        <h5 id="h5">Rated:</h5>
+        <div>{{vm.movies.Rated}}</div>
+        <h5 id="h5">Release:</h5>
+        <div>{{vm.movies.Released}}</div>
+        <h5 id="h5">Runtime:</h5>
+        <div>{{vm.movies.Runtime}}</div>
+        <h5 id="h5">Writer:</h5>
+        <div>{{vm.movies.Writer}}</div>
+        <h5 id="h5">Year:</h5>
+        <div>{{vm.movies.Year}}</div>
+        <h5 id="h5">IMDB Rating:</h5>
+        <div>{{vm.movies.imdbRating}}</div>
+        <h5 id="h5">IMDB Votes:</h5>
+        <div>{{vm.movies.imdbVotes}}</div>
+    </div>
+</div>
 </div>

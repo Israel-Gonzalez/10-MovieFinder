@@ -11,7 +11,10 @@
 }
 
 img {
-    margin-bottom: 15px;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
 }
 
 #movieTitle {
@@ -19,5 +22,19 @@ img {
 }
 
 #container1 {
+	margin: 0 auto;
     margin-bottom: 15px;
 }
+
+#h5 {
+    font-weight: bold;
+}
+
+#poster {
+    margin: 0 auto;
+}
+
+#year {
+	margin-top: 10px;
+}
+
